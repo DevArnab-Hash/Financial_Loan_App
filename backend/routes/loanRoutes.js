@@ -7,8 +7,8 @@ const router = express.Router();
 // Apply for a Loan
 router.post("/", authMiddleware, async (req, res) => {
   try {
-    const { amount, repaymentDate } = req.body;
-    const newLoan = new Loan({ userId: req.user.userId, amount, repaymentDate });
+    const { amount, repaymentDate, num, loantype, name, file } = req.body;
+    const newLoan = new Loan({ userId: req.user.userId, amount, repaymentDate, num, loantype,name, file });
     await newLoan.save();
     res.status(201).json({ message: "Loan application submitted" });
   } catch (err) {

@@ -1,0 +1,30 @@
+.register-container{
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        gap: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: 40%;
+        /* background-color: rgb(179, 112, 246); */
+        border-radius: 10px;
+        background-color: whitesmoke;
+        padding-bottom:25px;
+}
+
+#register-button{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 3px 0.3px black;
+    padding: 4px 6px 4px 6px;
+    font-size: 105%;
+    width: 100%;
+}

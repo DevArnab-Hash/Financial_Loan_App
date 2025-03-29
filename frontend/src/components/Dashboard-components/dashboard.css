@@ -1,0 +1,144 @@
+body {
+    /* background-color: rgba(0, 200, 0, 0.3); */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(152, 247, 241);
+}
+
+.dashboard {
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.moneynest-container{
+    display: flex;
+    /* border: 1px solid; */   
+}
+
+#moneynest {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+b{
+    border-radius:50%;
+    color: white;
+    background-color: blue;
+    padding: 12%;
+}
+
+#moneynest:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    width: 100%;
+    min-height: 87.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(152, 247, 241);
+    text-align: center;
+}
+
+#section-spantag1 {
+    font-size: 180%;
+    display: block;
+    padding-top: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#section-spantag1:hover {
+    transform: scale(1.1);
+}
+
+#section-spantag2 {
+    font-size: 70%;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+.sign-in-button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.sign-in-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.sign-in-button:active {
+    transform: scale(0.95);
+}
+
+
+.right-section {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .section {
+        width: 100%;
+        min-height: 50vh;
+        border-radius: 20px;
+    }
+
+    #moneynest {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .sign-in-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-box {
+        font-size: 2vh;
+    }
+
+    #moneynest {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    .section {
+        min-height: 40vh;
+    }
+
+    .sign-in-button {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}
